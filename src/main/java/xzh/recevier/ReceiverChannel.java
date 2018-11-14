@@ -9,6 +9,7 @@ import org.springframework.messaging.SubscribableChannel;
  * @date 2018/10/24 13:54
  */
 public interface ReceiverChannel {
+
     String SCORE_INPUT = "mqScoreInput";
 
     @Input(ReceiverChannel.SCORE_INPUT)

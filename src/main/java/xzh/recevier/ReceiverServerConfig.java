@@ -13,6 +13,7 @@ public class ReceiverServerConfig {
 
     @StreamListener(ReceiverChannel.SCORE_INPUT)
     public void receive(Object o) {
+        //如果需要接受指定实体类，这里Object换成实体对象
         System.out.println("接收消息："+o);
     }
 }
