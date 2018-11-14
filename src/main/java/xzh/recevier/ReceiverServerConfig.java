@@ -3,12 +3,14 @@ package xzh.recevier;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.messaging.handler.annotation.SendTo;
+import org.springframework.stereotype.Component;
 
 /**
  * 进行绑定
  * @author 向振华
  * @date 2018/10/24 13:55
  */
+@Component
 @EnableBinding({ReceiverChannel.class})
 public class ReceiverServerConfig {
 
